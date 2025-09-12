@@ -227,3 +227,46 @@ Diselesaikan oleh Yasmin
 ```cpp
 Perubahan dari variabel `y` tidak berpengaruh terhadap variabel `x`.
 ```
+
+## 3A - Variasi Operasi Assignment
+
+Diselesaikan oleh Yasmin
+
+```cpp
+Pada soal no. 1, berikut adalah "perjalanan" perubahan nilai dari variabel `x` dan `y`:
+
+|Perintah|Nilai x setelah  <br>perintah dijalankan|Nilai y setelah  <br>perintah dijalankan|
+|---|---|---|
+|```<br>int x = 3, y = 4;<br>```|3|4|
+|```<br>x -= 1;<br>```|2|4|
+|```<br>y += x * 5;<br>```|2|14|
+
+---
+
+Pada soal no. 2, semua operasi (kecuali no. c) melipatgandakan nilai variabel `x`.
+```
+
+## 3B - Membeli Kandang
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas_kandang = 12;
+
+    // bulan pertama
+    luas_kandang += 7;
+    cout << luas_kandang << endl;
+
+    // bulan kedua
+    luas_kandang += 7;
+    cout << luas_kandang << endl;
+
+    // bulan ketiga
+    luas_kandang += 7;
+    cout << luas_kandang << endl;
+}
+```
