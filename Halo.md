@@ -76,3 +76,154 @@ int main() {
     std::cout << 2 * (364 + 79) << std::endl;
 }
 ```
+
+## 2A - #include dan std::
+
+Diselesaikan oleh Yasmin
+
+```cpp
+Hanya program nomor II yang tidak sesuai sintaks bahasa C++. Program tersebut menggunakan `cout` dan `endl`, tanpa diawali dengan `std::` atau dilengkapi dengan perintah `using namespace std;`.
+```
+
+## 2B - Perkenalan Variabel
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int panjang = 364;
+    int lebar = 79;
+
+    // cetak luas kandang
+    cout << panjang * lebar << endl;
+
+    // cetak keliling kandang
+    cout << 2 * (panjang + lebar) << endl;
+}
+```
+
+## 2C - Memperbarui nilai variabel
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // kata sandi bulan pertama
+    int sandi = 174;
+    cout << sandi << endl;
+
+    // kata sandi bulan kedua
+    sandi = sandi * 23;
+    cout << sandi << endl;
+
+    // kata sandi bulan ketiga
+    sandi = sandi * 23;
+    cout << sandi << endl;
+}
+```
+
+## 3C - Kuis Perubahan Nilai Variabel
+
+Diselesaikan oleh Yasmin
+
+```cpp
+Pada soal no. 1, berikut adalah "perjalanan" perubahan nilai dari variabel `x`:
+
+|Perintah|Nilai x setelah  <br>perintah dijalankan|
+|---|---|
+|```<br>int x = 3;<br>```|3|
+|```<br>x = x + 1;<br>```|4|
+
+---
+
+Pada soal no. 2, berikut adalah "perjalanan" perubahan nilai dari variabel `x`:
+
+|Perintah|Nilai x setelah  <br>perintah dijalankan|
+|---|---|
+|```<br>int x = 3;<br>```|3|
+|```<br>x = x + x;<br>```|6|
+
+---
+
+Pada soal no. 3, berikut adalah "perjalanan" perubahan nilai dari variabel `x` dan `y`:
+
+|Perintah|Nilai x setelah  <br>perintah dijalankan|Nilai y setelah  <br>perintah dijalankan|
+|---|---|---|
+|```<br>int x = 3;<br>```|3|(tidak ada)|
+|```<br>int y = 4;<br>```|3|4|
+|```<br>x = y;<br>```|4|4|
+|```<br>y = x;<br>```|4|4|
+
+Perhatikan bahwa program tersebut TIDAK menukar isi dari variabel `x` dan `y`.
+```
+
+## 2E - Perkenalan Tipe Data String
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream> // untuk menggunakan cout dan endl
+#include <string>   // untuk menggunakan string
+using namespace std;
+
+int main() {
+    int tanggal = 15;
+    int tahun = 2023;
+
+    // jangan lupa bahwa string perlu diapit dengan kutip dua
+    string bulan = "Februari"; 
+
+    // cetak kata sandi
+    cout << tahun + 10 << "-" << bulan << "-" << tanggal + 7 << endl;
+}
+```
+
+## 2F - Aturan Variabel
+
+Diselesaikan oleh Yasmin
+
+```cpp
+Pada soal no. 2, yang tidak sesuai sintaks adalah potongan program a. Kita tidak bisa mengisi variabel bertipe `int` dengan nilai dari variabel lain yang bertipe `std::string`.
+```
+
+## 2G - Jual Beli Bebek
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	int jantan, betina;
+ 
+    // banyaknya bebek saat ini
+	jantan = 63;
+	betina = 192;
+ 
+    // setelah bulan pertama
+	betina = betina + jantan;
+	jantan = jantan - (jantan / 3);
+ 
+    // setelah bulan kedua
+	jantan = jantan + betina;
+	betina = betina - 10;
+	
+    // cetak total bebek
+	cout << jantan + betina << endl;
+}
+```
+
+## 2H - Rangkuman: Variabel dan Tipe Data
+
+Diselesaikan oleh Yasmin
+
+```cpp
+Perubahan dari variabel `y` tidak berpengaruh terhadap variabel `x`.
+```
