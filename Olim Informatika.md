@@ -1,4 +1,4 @@
-Yasmin
+Gadischa Yasmin El Faiza
 
 ## 1A - Program pertamaku
 
@@ -128,7 +128,7 @@ int main() {
 }
 ```
 
-## 3C - Kuis Perubahan Nilai Variabel
+## 2D - Kuis Perubahan Nilai Variabel
 
 Diselesaikan oleh Yasmin
 
@@ -343,3 +343,122 @@ while (counter <= 6) {
 ```
 
 a. 3
+
+## 3E - Membeli Kandang II
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas_kandang = 12;
+    int nomor_baris = 1;
+
+    while (nomor_baris < 4) {
+        luas_kandang += 7;
+        cout << nomor_baris << ": " << luas_kandang << endl;
+
+        nomor_baris += 1;
+    }
+}
+```
+
+## 3F - Membeli Kandang III
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas_kandang = 12;
+    
+    // Menyatakan sudah berapa bulan (berapa kali) Pak Dengklek
+    // membeli kandang baru.
+    int total_bulan = 0;
+
+    // Menyatakan total luas kandang yang dimiliki Pak Dengklek.
+    // Pada mulanya, totalnya adalah luas kandang lama Pak Dengklek.
+    int total_luas_kandang = luas_kandang;
+
+    while (total_bulan < 10) {
+        luas_kandang += 7;
+        total_luas_kandang += luas_kandang;
+
+        total_bulan += 1;
+    }
+
+    cout << total_luas_kandang << endl;
+}
+```
+
+## 3G - Membeli Kandang IV
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Menyatakan total banyaknya kandang yang dimiliki Pak Dengklek.
+    // Pada mulanya, Pak Dengklek memiliki 1 kandang seluas 12 meter persegi.
+    int total_kandang = 1;
+    int luas_kandang = 12;
+
+    int total_luas_kandang = luas_kandang;
+
+    while (total_luas_kandang <= 800) {
+        luas_kandang += 7;
+        total_luas_kandang += luas_kandang;
+
+        total_kandang += 1;
+    }
+
+    cout << total_kandang << endl;
+}
+```
+
+## 3H - Jual-Beli Bebek II
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int jantan = 0, betina = 0;
+    int tanggal = 1;
+
+    while (betina <= 10 * jantan) {
+        betina += tanggal;
+        tanggal += 1;
+        jantan += 1;
+    }
+
+    cout << tanggal << endl;
+}
+```
+
+## 3I - Rangkuman : Perulangan
+
+Diselesaikan oleh Yasmin
+
+1. Berapa kalikah tanda bintang tercetak pada potongan program berikut?
+
+```cpp
+int total = 0;
+while (total < 2) {
+    cout << "*" << endl;
+}
+```
+
+e. tercetak terus-menerus tanpa henti
+
+Perhatikan bahwa karena variabel `total` tidak pernah berubah, kondisinya tidak pernah berubah, yakni selalu benar. Oleh karena itu, perulangan `while` tersebut tidak pernah berhenti. Hati-hati! Ini merupakan kesalahan yang cukup umum.
+
+(Sebaliknya, jika kondisinya adalah salah sedari awal, perulangan `while` tidak akan pernah dijalankan.)

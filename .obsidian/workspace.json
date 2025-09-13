@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Halo.md",
+                "file": "Olim Informatika.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Halo"
+              "title": "Olim Informatika"
             }
           }
         ]
@@ -172,6 +172,6 @@
   },
   "active": "a18cb2675d794ada",
   "lastOpenFiles": [
-    "Halo.md"
+    "Olim Informatika.md"
   ]
 }
