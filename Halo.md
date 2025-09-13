@@ -270,3 +270,76 @@ int main() {
     cout << luas_kandang << endl;
 }
 ```
+
+## 3C - Perkenalan While
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas_kandang = 12;
+
+    while (luas_kandang < 33) {
+        luas_kandang += 7;
+        cout << luas_kandang << endl;
+
+
+    }
+}
+```
+
+## 3D - Pendalaman While
+
+Diselesaikan oleh Yasmin
+
+
+1. Berapa kalikah `C++` akan tercetak?
+```cpp
+
+int counter = 0;
+while (counter < 4) {
+    cout << "C++" << endl;
+    counter += 1;
+}
+```
+
+b. 4
+
+2. Berapa kalikah `C++` akan tercetak?
+
+```cpp
+```int counter = 1;
+while (counter < 4) {
+    cout << "C++" << endl;
+    counter += 1;
+}
+```
+
+a. 3
+
+3. Berapa kalikah `C++` akan tercetak?
+
+```cpp
+int counter = 1;
+while (counter <= 4) {
+    cout << "C++" << endl;
+    counter += 1;
+}
+```
+
+b. 4
+
+4. Berapa kalikah `C++` akan tercetak?
+
+```cpp
+int counter = 1;
+while (counter <= 6) {
+    cout << "C++" << endl;
+    counter += 2;
+}
+```
+
+a. 3
