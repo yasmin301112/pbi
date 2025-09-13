@@ -462,3 +462,34 @@ e. tercetak terus-menerus tanpa henti
 Perhatikan bahwa karena variabel `total` tidak pernah berubah, kondisinya tidak pernah berubah, yakni selalu benar. Oleh karena itu, perulangan `while` tersebut tidak pernah berhenti. Hati-hati! Ini merupakan kesalahan yang cukup umum.
 
 (Sebaliknya, jika kondisinya adalah salah sedari awal, perulangan `while` tidak akan pernah dijalankan.)
+
+## 4A- Perkenalan If
+
+Diselesaikan oleh Yasmin
+
+```cpp
+Pada soal no. 1, terdapat sebuah percabangan `if`. Kondisinya bernilai benar ✅.
+
+- Sehingga, kode di dalamnya dijalankan.
+
+---
+
+Pada soal no. 2, terdapat sebuah percabangan `if`. Kondisinya bernilai salah ❌.
+
+- Sehingga, kode di dalamnya TIDAK dijalankan.
+
+---
+
+Pada soal no. 3, terdapat **tiga** buah percabangan `if`:
+
+- Pada `if` pertama, kondisinya bernilai salah ❌.
+    - Sehingga, kode di dalamnya TIDAK dijalankan.
+- Pada `if` kedua, kondisinya bernilai benar ✅.
+    - Sehingga, kode di dalamnya dijalankan.
+- Pada `if` ketiga, kondisinya bernilai benar ✅.
+    - Sehingga, kode di dalamnya dijalankan.
+
+---
+
+Selanjutnya, kita akan coba gunakan struktur percabangan `if` ini pada soal berikutnya.
+```
