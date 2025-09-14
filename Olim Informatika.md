@@ -493,3 +493,44 @@ Pada soal no. 3, terdapat **tiga** buah percabangan `if`:
 
 Selanjutnya, kita akan coba gunakan struktur percabangan `if` ini pada soal berikutnya.
 ```
+
+## 4B - Menggiring Bebek
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int jantan = 67;
+    int betina = 98;
+
+    if (jantan % 2 == 0) {
+        cout << "banyaknya bebek jantan adalah bilangan genap" << endl;
+    }
+
+    if (betina % 2 == 0) {
+        cout << "banyaknya bebek betina adalah bilangan genap"<< endl;
+    }
+}
+```
+
+## 4C - Perkenalan Else
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int total_bebek = 67 + 98;
+
+    if (total_bebek % 2 == 0) {
+        cout << "total banyaknya bebek adalah bilangan genap" << endl;
+    } (total_bebek % 2 == 0) ;{
+        cout << "total banyaknya bebek adalah bilangan ganjil" << endl;
+    }
+}
+```
