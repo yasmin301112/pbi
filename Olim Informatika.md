@@ -534,3 +534,49 @@ int main() {
     }
 }
 ```
+
+## 4D - Perkenalan Else If
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int total_bebek = 67 + 98;
+
+    if (total_bebek % 13 == 0) {
+        cout << 13 << endl;
+    }
+    else if (total_bebek % 11 == 0) {
+        cout << 11 << endl;
+    }
+    else if (total_bebek % 5 == 0) {
+        cout << 5 << endl;
+    }
+    else if (total_bebek % 3 == 0) {
+        cout << 3 << endl;
+    } else {
+        cout << 1 << endl;
+    }
+}
+```
+## 4E - Kuis If
+
+Diselesaikan oleh Yasmin
+
+## 4F - Pendalaman Ekspresi Boolean
+
+Diselesaikan oleh Yasmin
+
+Pada soal no. 1, perhatikan bahwa kita tidak bisa menuliskan `1000 <= n < 10000`. Pada C++, kode tersebut ekuivalen dengan `(1000 <= n) < 10000`; yang tidak bermakna seperti yang kita inginkan.
+
+---
+
+Pada soal no. 2, perhatikan bahwa operator logika bersifat komutatif, sehingga semua ekspresi di bawah ini ekuivalen:
+
+- `(tahun % 4 == 0 && tahun % 100 != 0) || tahun % 400 == 0`
+- `tahun % 400 == 0 || (tahun % 4 == 0 && tahun % 100 != 0)`
+- `tahun % 400 == 0 || (tahun % 100 != 0 && tahun % 4 == 0)`
+- ... dst.
