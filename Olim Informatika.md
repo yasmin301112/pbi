@@ -580,3 +580,108 @@ Pada soal no. 2, perhatikan bahwa operator logika bersifat komutatif, sehingga s
 - `tahun % 400 == 0 || (tahun % 4 == 0 && tahun % 100 != 0)`
 - `tahun % 400 == 0 || (tahun % 100 != 0 && tahun % 4 == 0)`
 - ... dst.
+
+## 4G - Mengukur kandang II
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int A = 364 * 79;
+    int B = 243 * 99;
+    int C = 189 * 155;
+
+    string terbesar, terkecil;
+
+    if (A > B && A > C) {
+        // jika A lebih besar dari B dan C, maka A terbesar
+        terbesar = "A";
+
+        // cari yang terkecil, yakni yang lebih kecil antara B dan C
+        if (B < C) {
+            terkecil = "B";
+        } else {
+            terkecil = "C";
+        }
+    } else if (B > A && B > C) {
+        // jika B lebih besar dari A dan C, maka B terbesar
+        terbesar = "B";
+
+        // cari yang terkecil, yakni yang lebih kecil antara A dan C
+        if (A < C) {
+            terkecil = "A";
+        } else {
+            terkecil = "C";
+        }
+    } else {
+        // sampai sini, maka C terbesar
+        terbesar = "C";
+
+        // cari yang terkecil, yakni yang lebih kecil antara A dan B
+        if (A < B) {
+            terkecil = "A";
+        } else {
+            terkecil = "B";
+        }
+    }
+
+    cout << terbesar << endl;
+    cout << terkecil << endl;
+}
+```
+
+## 4H - Rangkuman: Percabangan
+
+Diselesaikan oleh Yasmin
+
+Sebetulnya, struktur `if`-`else if` merupakan sintaks yang disediakan bahasa C++, agar kita tidak harus menuliskan perulangan `if`-`else` bersarang apabila terdapat lebih dari satu kondisi.
+
+## 5A - Perkenalan For
+
+Diselesaikan Oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int sisi = 121; sisi <= 125; sisi += 1) {
+        cout << sisi * sisi << endl;
+    }
+}
+```
+
+## 5B - Perkenalan Tipe Data Boolean
+
+Diselesaikan oleh Yasmin
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool ada_yang_dijual = true;
+
+    for (int sisi = 121; sisi <= 125; sisi++) {
+        bool kelipatan_2 = sisi % 2 == 0;
+        bool kelipatan_3 = sisi % 3 == 0;
+
+        if (sisi % 2 == 0 && sisi != sisi % 3 == 0) {
+            ada_yang_dijual = true;
+        }
+    }
+
+    if (ada_yang_dijual) {
+        cout << "ada" << endl;
+    } else {
+        cout << "tidak ada" << endl;
+    }
+}
+```
+
+## 5C - Perkenalan Continue dan Break
+
